@@ -110,9 +110,11 @@ jobs:
         # 
         # 编译phicomm k2固件:
         cat >> .config <<EOF
-        CONFIG_TARGET_ramips=y
-        CONFIG_TARGET_ramips_mt7620=y
-        CONFIG_TARGET_ramips_mt7620_DEVICE_phicomm_psg1218a=y
+        CONFIG_TARGET_ar71xx=y
+        CONFIG_TARGET_ar71xx_tiny=y
+        CONFIG_TARGET_ar71xx_tiny_DEVICE_tl-wr841-v9=y
+        
+
         # CONFIG_TARGET_x86 is not set
         # CONFIG_TARGET_x86_64 is not set
         # CONFIG_TARGET_x86_64_Generic is not set
@@ -270,11 +272,11 @@ jobs:
         # CONFIG_PACKAGE_luci-app-sqm is not set
         # CONFIG_PACKAGE_luci-app-squid is not set
         # CONFIG_PACKAGE_luci-app-ssr-libev-server is not set
-        # CONFIG_PACKAGE_luci-app-ssr-plus is not set
+         CONFIG_PACKAGE_luci-app-ssr-plus=y
         # CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks is not set
-        # CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_V2ray is not set
+         CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_V2ray=y
         # CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Trojan is not set
-        # CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Kcptun is not set
+         CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Kcptun=y
         # CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Server is not set
         # CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Socks is not set
         # CONFIG_PACKAGE_luci-app-ssr-python-pro-server is not set
